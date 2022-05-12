@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('products', [TaskController::class, 'index']);
-Route::get('createProduct', [TaskController::class, 'index2']);
-Route::post('delete/{id}', [TaskController::class, 'delete']);
-Route::post('update/{id}', [TaskController::class, 'update']);
-Route::post('edit/{id}', [TaskController::class, 'edit']);
+Route::get('products', [ProductController::class, 'index']);
+Route::get('createProduct', [ProductController::class, 'index2']);
+Route::post('delete/{id}', [ProductController::class, 'delete']);
+Route::post('update/{id}', [ProductController::class, 'update']);
+Route::post('edit/{id}', [ProductController::class, 'edit']);
 
-Route::post('store', [TaskController::class, 'store']);
+Route::post('store', [ProductController::class, 'store']);

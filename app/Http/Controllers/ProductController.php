@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Task;
 
-class TaskController extends Controller
+class ProductController extends Controller
 {
     public function index(){
         $products = product::orderBy('name', 'Asc')->get();
